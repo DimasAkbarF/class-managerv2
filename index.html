@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk | Class Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-indigo-950 text-white">
+
+  <div class="bg-gray-800/60 backdrop-blur-xl p-8 rounded-2xl shadow-2xl w-full max-w-md text-center border border-gray-700">
+    <div class="w-12 h-12 bg-yellow-500 text-gray-900 font-bold text-xl mx-auto flex items-center justify-center rounded-full mb-4">KK</div>
+    <h2 class="text-sm tracking-[4px] text-yellow-400 mb-2">CLASS MANAGER</h2>
+    <h1 class="text-2xl font-bold mb-2">Masuk ke Akun Anda</h1>
+    <p class="text-gray-400 mb-6 text-sm">Gunakan NIM yang terdaftar untuk mengakses informasi kelas.</p>
+
+    <input id="nim" type="text" placeholder="Contoh: 241011400248"
+      class="w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-500 mb-5" />
+
+    <button onclick="login()"
+      class="w-full py-3 bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold rounded-lg transition">
+      Masuk
+    </button>
+     <p id="error-message" class="text-red-400 text-sm mt-3 hidden"></p>
+
+    <p class="text-gray-400 text-sm mt-6">Butuh akses? Hubungi bendahara atau admin kelas untuk mendapatkan akun.</p>
+  </div>
+<script src="asset/js/script.js"></script>
+</body>
+</html>
